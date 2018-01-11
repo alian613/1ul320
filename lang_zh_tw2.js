@@ -72,9 +72,6 @@ var lang = {
   ],
   "today": "今天"
  },
- "btn":{
-   "clean": "clean"
- },
  "day": "日",
  "hour": "時",
  "minute": "分",
@@ -181,5 +178,8 @@ var lang = {
   "rangeUnderflow": "必須大於或等於",
   "request_head": "請填寫",
   "request_tail": "這個欄位"
+ },
+  "btn":{
+   "clean": "clean"
  }
 };
