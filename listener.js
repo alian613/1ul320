@@ -12,7 +12,7 @@ var ComponentListener = {
 //				if($('.data-tip').length == 0)
 //					$('<label class="data-tip" style="color: red; position: absolute;">' + maxlengthEl.validationMessage + '</label>').insertAfter($(maxlengthEl));
 				
-				$(maxlengthEl).attr('data-tip', lang.form.maxlength_err_msg);
+				$(maxlengthEl).attr('data-tip', 'length must be 1 ~ 50');
 				if($('.data-tip').length == 0)
 					$('<label class="data-tip" style="color: red; position: absolute;">' + lang.form.maxlength_err_msg + '</label>').insertAfter($(maxlengthEl));
 			} else {
@@ -64,16 +64,16 @@ var ComponentListener = {
 				
 				if(!elV.checkValidity()) {
 					valid[idx] = false;
-					el.attr('data-tip', lang.form.illegal_value);
+					el.attr('data-tip', 'illegal value');
 					if(idx == 0) {
 						if(!el.parent().children().eq(1).hasClass('data-tip')) {
 							$('<label class="data-tip" style="color: red; position: absolute; top: 35px; left: 0px; width:220px">'
-									+ lang.form.illegal_value + '</label>').insertAfter(el);
+									+ 'illegal value' + '</label>').insertAfter(el);
 						}
 					} else {
 						if(!el.parent().children().eq(3).hasClass('data-tip')) {
 							$('<label class="data-tip" style="color: red; position: absolute; top: 35px; left: 220px; width:220px">' 
-									+ lang.form.illegal_value + '</label>').insertAfter(el);
+									+ 'illegal value' + '</label>').insertAfter(el);
 						}
 					}
 				} else {
@@ -167,16 +167,16 @@ var ComponentListener = {
 				
 				if(!elV.checkValidity()) {
 					valid[idx] = false;
-					el.attr('data-tip', lang.form.illegal_value);
+					el.attr('data-tip', 'illegal value');
 					if(idx == 0) {
 						if(!el.parent().children().eq(1).hasClass('data-tip')) {
 							$('<label class="data-tip" style="color: red; position: absolute; top: 35px; left: 0px; width:220px">'
-									+ lang.form.illegal_value + '</label>').insertAfter(el);
+									+ 'illegal value' + '</label>').insertAfter(el);
 						}
 					} else {
 						if(!el.parent().children().eq(3).hasClass('data-tip')) {
 							$('<label class="data-tip" style="color: red; position: absolute; top: 35px; left: 220px; width:220px">' 
-									+ lang.form.illegal_value + '</label>').insertAfter(el);
+									+ 'illegal value' + '</label>').insertAfter(el);
 						}
 					}
 				} else {
