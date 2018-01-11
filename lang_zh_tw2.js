@@ -72,6 +72,9 @@ var lang = {
   ],
   "today": "今天"
  },
+ "btn":{
+   "clean": "clean"
+ },
  "day": "日",
  "hour": "時",
  "minute": "分",
