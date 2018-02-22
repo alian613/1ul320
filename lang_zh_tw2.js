@@ -180,6 +180,6 @@ var lang = {
   "request_tail": "這個欄位"
  },
   "btn":{
-   "clean": "clean"
+   "clean": "Clean"
  }
 };
